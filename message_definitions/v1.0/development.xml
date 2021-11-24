@@ -177,13 +177,13 @@
           If the mode is not supported the vehicle should ACK with MAV_RESULT_FAILED.
         </description>
         <param index="1" label="Standard Mode" enum="MAV_STANDARD_MODE">The mode to set.</param>
-        <param index="2" reserved="true" default="0" />
-        <param index="3" reserved="true" default="0" />
-        <param index="4" reserved="true" default="0" />
-        <param index="5" reserved="true" default="0" />
-        <param index="6" reserved="true" default="0" />
-        <param index="7" reserved="true" default="NaN" />
-      </entry> 
+        <param index="2" reserved="true" default="0"/>
+        <param index="3" reserved="true" default="0"/>
+        <param index="4" reserved="true" default="0"/>
+        <param index="5" reserved="true" default="0"/>
+        <param index="6" reserved="true" default="0"/>
+        <param index="7" reserved="true" default="NaN"/>
+      </entry>
     </enum>
   </enums>
   <messages>
@@ -252,7 +252,7 @@
       <field type="uint64_t" name="time_usec" units="us">Timestamp (UNIX Epoch time or time since system boot).
         The receiving end can infer timestamp format (since 1.1.1970 or since system boot) by checking for the magnitude of the number.</field>
     </message>
-     <message id="435" name="AVAILABLE_MODES">
+    <message id="435" name="AVAILABLE_MODES">
       <description>Get information about a particular flight modes.
         As this includes both custom and base modes it can also be used to determine the mapping between custom and standard modes.
         The message can be enumerated or requested for a particular mode using MAV_CMD_REQUEST_MESSAGE.
@@ -265,7 +265,7 @@
       <field type="uint32_t" name="custom_mode">A bitfield for use for autopilot-specific flags</field>
       <field type="char[50]" name="mode_name">Name of custom mode, without null termination character. Should be omitted for standard modes.</field>
     </message>
-     <message id="435" name="CURRENT_MODE">
+    <message id="435" name="CURRENT_MODE">
       <description>Get the current mode.
         This should be emitted on any mode change, or on request using MAV_CMD_REQUEST_MESSAGE.
       </description>
