@@ -265,7 +265,7 @@
       <field type="uint32_t" name="custom_mode">A bitfield for use for autopilot-specific flags</field>
       <field type="char[50]" name="mode_name">Name of custom mode, without null termination character. Should be omitted for standard modes.</field>
     </message>
-    <message id="435" name="CURRENT_MODE">
+    <message id="436" name="CURRENT_MODE">
       <description>Get the current mode.
         This should be emitted on any mode change, or on request using MAV_CMD_REQUEST_MESSAGE.
       </description>
