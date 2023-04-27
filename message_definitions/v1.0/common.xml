@@ -397,6 +397,9 @@
       <entry value="6" name="MAV_MOUNT_MODE_HOME_LOCATION">
         <description>Gimbal tracks home location</description>
       </entry>
+      <entry value="7" name="MAV_MOUNT_MODE_CIRCLE_CENTER">
+        <description>Gimbal tracks circle center</description>
+      </entry>
     </enum>
     <!-- Gimbal Device Capability Enumeration.  Used by latest (2021) STorM32 and mavlink Gimbal v2 -->
     <enum name="GIMBAL_DEVICE_CAP_FLAGS" bitmask="true">
